@@ -52,22 +52,22 @@ int main()
         printf("Ordem crescente: %d>%d>%d>%d",a,c,d,b);
         printf("\nOrdem decrescente: %d>%d>%d>%d",b,d,c,a);}
 
-    if(c>b && b>a && a>d){
+    if(c>a && a>b && b>d){
         printf("Ordem crescente: %d>%d>%d>%d",d,b,a,c);
         printf("\nOrdem decrescente: %d>%d>%d>%d",c,a,b,d);}
-    if(c>b && b>d && d>a){
+    if(c>a && a>d && d>b){
         printf("Ordem crescente: %d>%d>%d>%d",b,d,a,c);
         printf("\nOrdem decrescente: %d>%d>%d>%d",c,a,d,b);}
-    if(c>a && c>b && b>d){
+    if(c>b && b>a && a>d){
         printf("Ordem crescente: %d>%d>%d>%d",d,a,b,c);
         printf("\nOrdem decrescente: %d>%d>%d>%d",c,b,a,d);}
-    if(c>a && a>d && d>b){
+    if(c>b && b>d && d>a){
         printf("Ordem crescente: %d>%d>%d>%d",a,d,b,c);
         printf("\nOrdem decrescente: %d>%d>%d>%d",c,b,d,a);}
-    if(c>d && d>b && b>a){
+    if(c>d && d>a && a>b){
         printf("Ordem crescente: %d>%d>%d>%d",b,a,d,c);
         printf("\nOrdem decrescente: %d>%d>%d>%d",c,d,a,b);}
-    if(c>d && d>a && a>b){
+    if(c>d && d>b && b>a){
         printf("Ordem crescente: %d>%d>%d>%d",a,b,d,c);
         printf("\nOrdem decrescente: %d>%d>%d>%d",c,d,b,a);}
     if(d>b && b>c && c>a){
