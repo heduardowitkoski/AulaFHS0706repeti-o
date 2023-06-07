@@ -39,9 +39,17 @@ int main()
             break;
 
          case 4:
-             divisao=a/b;
+             if(b==0)
+                printf("O segundo numero precisa ser diferente de zero\n");
+
+             else
+             {divisao=a/b;
              printf("A divisao e: %.2f",divisao);
+             }
              break;
+
+         default:
+             printf("Numero invalido");
     }
 
     return 0;
