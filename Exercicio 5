@@ -1,0 +1,48 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    float a,b,media,diferenca,produto,divisao;
+    int v;
+
+    printf("Insira dois numeros: \n");
+    scanf("%f%f",&a,&b);
+    printf("#####ESCOLHA UMA DAS OPCOES####\n\n1-Media entre os numeros digitados\n2-Diferenca do maior pelo menor\n3-Produto entre os numeros digitados\n4-Divisao do primeiro pelo segundo\n\n");
+    scanf("%d",&v);
+
+    switch(v)
+    {
+        case 1:
+            media=(a+b)/2;
+            printf("A media entre os numeros e: %.1f",media);
+            break;
+
+        case 2:
+            if(a>b)
+                {
+                diferenca=a-b;
+                printf("A diferenca e: %.0f",diferenca);
+                }
+            if(a<b)
+                {
+                diferenca=b-a;
+                printf("A diferenca e: %0.f",diferenca);
+                }
+            if(a==b)
+                printf("Os numeros sao iguais");
+            break;
+
+         case 3:
+            produto=a*b;
+            printf("O produto entre os numeros e: %.0f",produto);
+            break;
+
+         case 4:
+             divisao=a/b;
+             printf("A divisao e: %.2f",divisao);
+             break;
+    }
+
+    return 0;
+}
